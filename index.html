@@ -40,6 +40,17 @@
 </head>
 
 <body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress"></div>
+
+  <!-- Parallax Background -->
+  <div class="parallax-bg">
+    <div class="parallax-orb orb-1"></div>
+    <div class="parallax-orb orb-2"></div>
+    <div class="parallax-orb orb-3"></div>
+    <div class="parallax-grid"></div>
+  </div>
+
   <!-- Navigation -->
   <nav class="navbar">
     <div class="nav-container">
@@ -77,56 +88,90 @@
     <div class="hero-container">
       <div class="hero-content">
         <div class="hero-badge">
+          <span class="badge-dot"></span>
           <span class="badge-text">Available for opportunities</span>
         </div>
 
         <h1 class="hero-title">
-          <span class="title-line">Student Developer</span>
-          <span class="title-line">& Problem Solver</span>
+          <span class="title-line">Building Digital</span>
+          <span class="title-line text-gradient">Experiences</span>
         </h1>
 
         <p class="hero-description">
-          I'm a 9th grade student passionate about coding, competitive programming,
-          and building innovative projects. Based in Mumbai, India.
+          I'm a <span class="highlight">9th grade student</span> from Mumbai.
+          <br>
+          <span class="typing-text"></span>
         </p>
 
         <div class="hero-actions">
           <a href="#work" class="btn btn-primary">View My Work</a>
           <a href="#contact" class="btn btn-secondary">Get In Touch</a>
         </div>
-      </div>
 
-      <div class="hero-image">
-        <div class="image-placeholder">
-          <div class="code-snippet">
-            <div class="code-line">
-              <span class="code-keyword">const</span>
-              <span class="code-variable">developer</span>
-              <span class="code-operator">=</span>
-              <span class="code-string">"Tanay Mishra"</span>
-            </div>
-            <div class="code-line">
-              <span class="code-keyword">let</span>
-              <span class="code-variable">passion</span>
-              <span class="code-operator">=</span>
-              <span class="code-string">"coding"</span>
-            </div>
-            <div class="code-line">
-              <span class="code-keyword">while</span>
-              <span class="code-bracket">(</span>
-              <span class="code-variable">learning</span>
-              <span class="code-bracket">)</span>
-              <span class="code-bracket">{</span>
-            </div>
-            <div class="code-line code-indent">
-              <span class="code-variable">skills</span>
-              <span class="code-operator">++</span>
-            </div>
-            <div class="code-line">
-              <span class="code-bracket">}</span>
-            </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Byte-ne" target="_blank" class="hero-social-link" title="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="https://linkedin.com/in/tanay-mishra-dev" target="_blank" class="hero-social-link" title="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://instagram.com/real.tanay" target="_blank" class="hero-social-link" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.reddit.com/user/loose_count_6785" target="_blank" class="hero-social-link"
+            title="Reddit">
+            <i class="fab fa-reddit-alien"></i>
+          </a>
         </div>
       </div>
+
+      <div class="hero-visual">
+        <div class="code-window tilt-card">
+          <div class="window-header">
+            <div class="window-controls">
+              <span class="control close"></span>
+              <span class="control minimize"></span>
+              <span class="control maximize"></span>
+            </div>
+            <div class="window-title">developer.js</div>
+          </div>
+          <div class="code-content">
+            <div class="code-line">
+              <span class="line-number">1</span>
+              <span class="code-keyword">const</span> <span class="code-variable">developer</span> <span
+                class="code-operator">=</span> <span class="code-bracket">{</span>
+            </div>
+            <div class="code-line">
+              <span class="line-number">2</span>
+              <span class="code-indent"></span><span class="code-property">name</span>: <span class="code-string">"Tanay
+                Mishra"</span>,
+            </div>
+            <div class="code-line">
+              <span class="line-number">3</span>
+              <span class="code-indent"></span><span class="code-property">role</span>: <span
+                class="code-string">"Student Developer"</span>,
+            </div>
+            <div class="code-line">
+              <span class="line-number">4</span>
+              <span class="code-indent"></span><span class="code-property">skills</span>: <span
+                class="code-bracket">[</span><span class="code-string">"Web"</span>, <span
+                class="code-string">"AI"</span>, <span class="code-string">"App"</span><span
+                class="code-bracket">]</span>
+            </div>
+            <div class="code-line">
+              <span class="line-number">5</span>
+              <span class="code-bracket">}</span>;
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <div class="arrow-down"></div>
     </div>
   </section>
 
@@ -134,67 +179,80 @@
   <section id="about" class="about">
     <div class="container">
       <div class="section-header">
-        <h2 class="section-title">About Me</h2>
-        <p class="section-subtitle">Get to know me better</p>
+        <h2 class="section-title reveal-text">About <span class="text-gradient">Me</span></h2>
+        <p class="section-subtitle reveal-text" style="transition-delay: 0.1s">Developing with passion & precision</p>
       </div>
 
-      <div class="about-grid">
-        <div class="about-text">
-          <h3>Who I Am</h3>
-          <p>I'm a passionate 9th-grade student from Mumbai who loves to code and solve problems. My journey in
-            programming started with curiosity and has grown into a deep passion for creating innovative solutions.</p>
-
-          <h3>What I Do</h3>
-          <p>I specialize in web development, competitive programming, and building projects that solve real-world
-            problems. I'm always eager to learn new technologies and take on challenging projects.</p>
-
-          <div class="stats-grid">
-            <div class="stat-item">
-              <span class="stat-number">4+</span>
-              <span class="stat-label">Projects</span>
+      <div class="bento-grid">
+        <!-- Bio Card (Large) -->
+        <div class="bento-item bio-card glass-card spotlight" data-spotlight>
+          <div class="bio-content">
+            <h3 class="bento-title reveal-text">About Me</h3>
+            <div class="reveal-wrapper">
+              <p class="bio-text reveal-text">
+                Hello there, I am <strong>Tanay Mishra</strong>. I live in <strong>Powai, Mumbai</strong> and I am
+                currently a 9th-grade student at <strong>KV IIT Powai</strong>.
+                I have a deep passion for coding and building digital experiences.
+              </p>
             </div>
-            <div class="stat-item">
-              <span class="stat-number">3+</span>
-              <span class="stat-label">Years Coding</span>
-            </div>
-            <div class="stat-item">
-              <span class="stat-number">5+</span>
-              <span class="stat-label">Technologies</span>
+
+            <div class="about-details reveal-text" style="transition-delay: 0.2s">
+              <div class="detail-group">
+                <h4><i class="fas fa-trophy"></i> Awards</h4>
+                <ul class="awards-list">
+                  <li>National Rank 1 - AI Vidyasetu 1.0 Hackathon (2025-26)</li>
+                  <li>Winner - Rotary Club Quiz (2023)</li>
+                </ul>
+              </div>
+
+              <div class="detail-group">
+                <h4><i class="fas fa-gamepad"></i> Hobbies</h4>
+                <div class="hobbies-tags">
+                  <span class="hobby-tag">Badminton</span>
+                  <span class="hobby-tag">Cooking</span>
+                  <span class="hobby-tag">Video Games</span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="about-skills">
-          <h3>Skills & Technologies</h3>
-          <div class="skills-list">
-            <div class="skill-category">
-              <h4>Frontend</h4>
-              <div class="skill-tags">
-                <span class="skill-tag">HTML/CSS</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">React</span>
-                <span class="skill-tag">Vue.js</span>
-              </div>
+        <!-- Stats Column -->
+        <div class="bento-column">
+          <div class="bento-item stat-card glass-card spotlight" data-spotlight>
+            <div class="stat-content">
+              <i class="fas fa-cubes stat-icon"></i>
+              <h4 class="stat-number" data-target="15">0</h4>
+              <p class="stat-label">Projects Built</p>
             </div>
-
-            <div class="skill-category">
-              <h4>Backend</h4>
-              <div class="skill-tags">
-                <span class="skill-tag">Node.js</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">Express</span>
-                <span class="skill-tag">MongoDB</span>
-              </div>
+          </div>
+          <div class="bento-item stat-card glass-card spotlight" data-spotlight>
+            <div class="stat-content">
+              <i class="fas fa-code stat-icon"></i>
+              <h4 class="stat-number" data-target="3">0</h4>
+              <p class="stat-label">Years Coding</p>
             </div>
+          </div>
+        </div>
 
-            <div class="skill-category">
-              <h4>Tools</h4>
-              <div class="skill-tags">
-                <span class="skill-tag">Git</span>
-                <span class="skill-tag">VS Code</span>
-                <span class="skill-tag">Figma</span>
-                <span class="skill-tag">Docker</span>
-              </div>
+        <!-- Skills Card (Wide) -->
+        <div class="bento-item skills-card glass-card spotlight" data-spotlight>
+          <h3 class="bento-title reveal-text">Tech Arsenal</h3>
+          <div class="skills-wrapper">
+            <div class="skill-tag float-animation" style="animation-delay: 0s"><i class="fab fa-html5"></i> HTML</div>
+            <div class="skill-tag float-animation" style="animation-delay: 0.2s"><i class="fab fa-css3-alt"></i> CSS
+            </div>
+            <div class="skill-tag float-animation" style="animation-delay: 0.4s"><i class="fab fa-js"></i> JavaScript
+            </div>
+            <div class="skill-tag float-animation" style="animation-delay: 0.6s"><i class="fab fa-react"></i> React
+            </div>
+            <div class="skill-tag float-animation" style="animation-delay: 0.8s"><i class="fab fa-node"></i> Node.js
+            </div>
+            <div class="skill-tag float-animation" style="animation-delay: 1.0s"><i class="fab fa-python"></i> Python
+            </div>
+            <div class="skill-tag float-animation" style="animation-delay: 1.2s"><i class="fab fa-git-alt"></i> Git
+            </div>
+            <div class="skill-tag float-animation" style="animation-delay: 1.4s"><i class="fab fa-figma"></i> Figma
             </div>
           </div>
         </div>
@@ -211,84 +269,108 @@
       </div>
 
       <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-image">
-            <div class="project-placeholder">
+        <!-- EduWay -->
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <div class="project-icon">
               <i class="fas fa-graduation-cap"></i>
             </div>
+            <div class="project-links-top">
+              <a href="https://github.com/Byte-ne/EduWay" target="_blank" aria-label="GitHub Source">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://tinyurl.com/eduwayport" target="_blank" aria-label="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
           </div>
-          <div class="project-content">
+          <div class="project-body">
             <h3 class="project-title">EduWay</h3>
-            <p class="project-description">An educational platform designed to enhance learning experiences with interactive tools and resources for students.</p>
+            <p class="project-description">
+              An interactive educational platform revolutionizing student learning with real-time tools and resources.
+            </p>
             <div class="project-tags">
               <span class="project-tag">Web App</span>
               <span class="project-tag">Education</span>
               <span class="project-tag">Interactive</span>
             </div>
-            <div class="project-links">
-              <a href="https://tinyurl.com/eduwayport" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
-              <a href="https://github.com/Byte-ne/EduWay" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a>
-            </div>
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-image">
-            <div class="project-placeholder">
+        <!-- EcoWaste -->
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <div class="project-icon">
               <i class="fas fa-recycle"></i>
             </div>
-          </div>
-          <div class="project-content">
-            <h3 class="project-title">EcoWaste</h3>
-            <p class="project-description">A waste management application focused on environmental sustainability and efficient waste disposal solutions.</p>
-            <div class="project-tags">
-              <span class="project-tag">Environment</span>
-              <span class="project-tag">Management</span>
-              <span class="project-tag">Sustainability</span>
+            <div class="project-links-top">
+              <a href="https://github.com/Byte-ne/EcoWaste" target="_blank" aria-label="GitHub Source">
+                <i class="fab fa-github"></i>
+              </a>
+              <a href="https://tinyurl.com/ecowasteport" target="_blank" aria-label="Live Demo">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
             </div>
-            <div class="project-links">
-              <a href="https://tinyurl.com/ecowasteport" target="_blank" rel="noopener noreferrer" class="project-link">View Project</a>
-              <a href="https://github.com/Byte-ne/EcoWaste" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">EcoWaste</h3>
+            <p class="project-description">
+              Smart waste management solution promoting environmental sustainability through efficient tracking.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag">Sustainability</span>
+              <span class="project-tag">Management</span>
+              <span class="project-tag">Environment</span>
             </div>
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-image">
-            <div class="project-placeholder">
+        <!-- ByteAI -->
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <div class="project-icon">
               <i class="fas fa-brain"></i>
             </div>
+            <div class="project-links-top">
+              <a href="https://github.com/Byte-ne/Byte" target="_blank" aria-label="GitHub Source">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
           </div>
-          <div class="project-content">
-            <h3 class="project-title">ByteAI (In Development)</h3>
-            <p class="project-description">An AI-powered application exploring machine learning and intelligent automation solutions.</p>
+          <div class="project-body">
+            <h3 class="project-title">ByteAI <span class="badge-sm">Dev</span></h3>
+            <p class="project-description">
+              Exploring the frontiers of machine learning and intelligent automation in a robust Python environment.
+            </p>
             <div class="project-tags">
               <span class="project-tag">AI/ML</span>
               <span class="project-tag">Python</span>
-              <span class="project-tag">In Development</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Byte-ne/Byte" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a>
+              <span class="project-tag">Automation</span>
             </div>
           </div>
         </div>
 
-        <div class="project-card">
-          <div class="project-image">
-            <div class="project-placeholder">
+        <!-- DeskOS -->
+        <div class="project-card glass-card">
+          <div class="project-header">
+            <div class="project-icon">
               <i class="fas fa-desktop"></i>
             </div>
+            <div class="project-links-top">
+              <a href="https://github.com/Byte-ne/ArgonOS" target="_blank" aria-label="GitHub Source">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
           </div>
-          <div class="project-content">
-            <h3 class="project-title">DeskOS (In Development)</h3>
-            <p class="project-description">A custom operating system project exploring low-level programming and system architecture.</p>
+          <div class="project-body">
+            <h3 class="project-title">DeskOS <span class="badge-sm">Dev</span></h3>
+            <p class="project-description">
+              A custom operating system project diving deep into low-level system architecture and kernel design.
+            </p>
             <div class="project-tags">
-              <span class="project-tag">OS</span>
+              <span class="project-tag">OS Dev</span>
               <span class="project-tag">Systems</span>
               <span class="project-tag">Low-level</span>
-            </div>
-            <div class="project-links">
-              <a href="https://github.com/Byte-ne/ArgonOS" target="_blank" rel="noopener noreferrer" class="project-link">GitHub</a>
             </div>
           </div>
         </div>
@@ -301,15 +383,15 @@
     <div class="container">
       <div class="contact-content">
         <div class="contact-info">
-          <h2 class="section-title">Let's Work Together</h2>
-          <p class="contact-description">
+          <h2 class="section-title reveal-text">Let's Work Together</h2>
+          <p class="contact-description reveal-text" style="transition-delay: 0.1s">
             I'm always interested in new opportunities and collaborations.
             Whether you have a project in mind or just want to chat about technology,
             feel free to reach out.
           </p>
 
           <div class="contact-details">
-            <div class="contact-item">
+            <div class="contact-item glass-card spotlight" data-spotlight>
               <i class="fas fa-envelope"></i>
               <div>
                 <h4>Email</h4>
@@ -317,7 +399,7 @@
               </div>
             </div>
 
-            <div class="contact-item">
+            <div class="contact-item glass-card spotlight" data-spotlight>
               <i class="fab fa-github"></i>
               <div>
                 <h4>GitHub</h4>
@@ -325,7 +407,7 @@
               </div>
             </div>
 
-            <div class="contact-item">
+            <div class="contact-item glass-card spotlight" data-spotlight>
               <i class="fas fa-map-marker-alt"></i>
               <div>
                 <h4>Location</h4>
@@ -335,7 +417,7 @@
           </div>
         </div>
 
-        <div class="contact-form-container">
+        <div class="contact-form-container glass-card spotlight" data-spotlight>
           <form class="contact-form">
             <div class="form-row">
               <div class="form-group">
@@ -390,7 +472,13 @@
 
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script src="data.js" defer></script>
+  <!-- Resume Floating Action Button -->
+  <a href="./resume.pdf" class="resume-fab" download aria-label="Download Resume" title="Download CV">
+    <i class="fas fa-file-alt"></i>
+    <span class="tooltip">Download CV</span>
+  </a>
+
+  <script src="data.js?v=3" defer></script>
 </body>
 
 </html>
