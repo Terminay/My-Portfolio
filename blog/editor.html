@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Editor — Tanay Mishra</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cascadia-code/400.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cascadia-code/600.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cascadia-code/700.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/github-dark-dimmed.min.css">
+
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="blog.css">
+</head>
+
+<body class="blog-page">
+  <div class="editor-layout">
+    <!-- Sidebar -->
+    <aside class="editor-sidebar">
+      <div class="sidebar-header">
+        <h2><i class="fas fa-pen-fancy"></i> Dashboard</h2>
+        <button id="new-post-btn"><i class="fas fa-plus"></i> New Post</button>
+        <div class="sidebar-actions">
+          <button id="export-btn" title="Export posts"><i class="fas fa-download"></i> Export</button>
+          <button id="import-btn" title="Import posts"><i class="fas fa-upload"></i> Import</button>
+        </div>
+        <a href="/blog/" style="color: var(--color-accent); font-size: 0.8rem; text-decoration: none;">
+          <i class="fas fa-arrow-left"></i> View Blog
+        </a>
+      </div>
+      <div class="posts-list" id="posts-list">
+        <!-- Rendered by JS -->
+      </div>
+    </aside>
+
+    <!-- Editor Main -->
+    <main class="editor-main">
+      <!-- Toolbar -->
+      <div class="editor-toolbar">
+        <div class="meta-fields">
+          <input type="text" id="post-title-input" placeholder="Post title…">
+          <input type="text" id="post-tags-input" placeholder="Tags (comma separated)">
+          <input type="text" id="post-image-input" placeholder="Featured image URL">
+        </div>
+        <div class="toolbar-actions">
+          <button data-action="bold" title="Bold (Ctrl+B)"><i class="fas fa-bold"></i></button>
+          <button data-action="italic" title="Italic (Ctrl+I)"><i class="fas fa-italic"></i></button>
+          <button data-action="heading" title="Heading"><i class="fas fa-heading"></i></button>
+          <button data-action="link" title="Link"><i class="fas fa-link"></i></button>
+          <button data-action="image" title="Image"><i class="fas fa-image"></i></button>
+          <button data-action="code" title="Code Block"><i class="fas fa-code"></i></button>
+          <button data-action="quote" title="Blockquote"><i class="fas fa-quote-right"></i></button>
+          <button data-action="list" title="List"><i class="fas fa-list"></i></button>
+        </div>
+      </div>
+
+      <!-- Split Panes -->
+      <div class="editor-panes">
+        <div class="editor-write">
+          <textarea id="markdown-input" placeholder="Write your post in markdown…
+
+# Getting Started
+Drop images here or use the toolbar above.
+
+Keyboard shortcuts:
+  Ctrl+B = Bold
+  Ctrl+I = Italic
+  Ctrl+S = Save Draft
+  Tab = Indent"></textarea>
+        </div>
+        <div class="editor-preview">
+          <div id="preview-content" class="preview-content">
+            <p class="preview-placeholder">Preview will appear here…</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="editor-footer">
+        <span class="editor-status" id="editor-status"></span>
+        <div class="editor-actions">
+          <button id="save-draft-btn" class="btn btn-secondary">Save Draft</button>
+          <button id="publish-btn" class="btn btn-primary">Publish</button>
+          <button id="delete-btn" class="btn btn-danger">Delete</button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify@3/dist/purify.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+  <script src="blog.js"></script>
+</body>
+
+</html>

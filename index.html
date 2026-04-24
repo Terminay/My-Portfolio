@@ -11,10 +11,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cascadia-code/400.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cascadia-code/500.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cascadia-code/600.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/cascadia-code/700.css">
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -24,14 +24,14 @@
 
   <!-- Meta tags for SEO -->
   <meta name="description"
-    content="Tanay Mishra - 9th grade passionate coder and problem solver from Mumbai. Explore my projects, skills, and achievements in web development and competitive programming.">
+    content="Tanay Mishra - 10th grade passionate coder and problem solver from Mumbai. Explore my projects, skills, and achievements in web development and competitive programming.">
   <meta name="keywords"
     content="Tanay Mishra, portfolio, web developer, student, Mumbai, coding, programming, hackathons">
   <meta name="author" content="Tanay Mishra">
 
   <!-- Open Graph tags -->
   <meta property="og:title" content="Tanay Mishra - Portfolio">
-  <meta property="og:description" content="9th grade passionate coder and problem solver from Mumbai">
+  <meta property="og:description" content="10th grade passionate coder and problem solver from Mumbai">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://tanaymishra.dev">
 
@@ -63,6 +63,7 @@
         <li><a href="#about" class="nav-link">About</a></li>
         <li><a href="#work" class="nav-link">Work</a></li>
         <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li><a href="/blog" class="nav-link">Blog</a></li>
       </ul>
 
       <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
@@ -80,6 +81,7 @@
       <a href="#about" class="mobile-nav-link">About</a>
       <a href="#work" class="mobile-nav-link">Work</a>
       <a href="#contact" class="mobile-nav-link">Contact</a>
+      <a href="/blog" class="mobile-nav-link">Blog</a>
     </div>
   </div>
 
@@ -98,7 +100,7 @@
         </h1>
 
         <p class="hero-description">
-          I'm a <span class="highlight">9th grade student</span> from Mumbai.
+          I'm a <span class="highlight">10th grade student</span> from Mumbai.
           <br>
           <span class="typing-text"></span>
         </p>
@@ -114,6 +116,9 @@
           </a>
           <a href="https://linkedin.com/in/tanay-mishra-dev" target="_blank" class="hero-social-link" title="LinkedIn">
             <i class="fab fa-linkedin"></i>
+          </a>
+          <a href="https://codeforces.com/profile/kilobyte136" target="_blank" class="hero-social-link" title="Codeforces">
+            <i class="fas fa-code"></i>
           </a>
           <a href="https://instagram.com/real.tanay" target="_blank" class="hero-social-link" title="Instagram">
             <i class="fab fa-instagram"></i>
@@ -191,7 +196,7 @@
             <div class="reveal-wrapper">
               <p class="bio-text reveal-text">
                 Hello there, I am <strong>Tanay Mishra</strong>. I live in <strong>Powai, Mumbai</strong> and I am
-                currently a 9th-grade student at <strong>KV IIT Powai</strong>.
+                currently a 10th-grade student at <strong>KV IIT Powai</strong>.
                 I have a deep passion for coding and building digital experiences.
               </p>
             </div>
@@ -233,6 +238,29 @@
               <p class="stat-label">Years Coding</p>
             </div>
           </div>
+
+          <!-- Codeforces Card -->
+          <div class="bento-item cf-card glass-card spotlight" data-spotlight>
+            <h3 class="cf-card-title"><i class="fas fa-code"></i> Codeforces</h3>
+            <div class="cf-profile">
+              <a href="https://codeforces.com/profile/kilobyte136" target="_blank" class="cf-handle">kilobyte136</a>
+              <span class="cf-rank" id="cf-rank">Loading...</span>
+            </div>
+            <div class="cf-stats-grid">
+              <div class="cf-stat">
+                <span class="cf-stat-value" id="cf-rating">—</span>
+                <span class="cf-stat-label">Rating</span>
+              </div>
+              <div class="cf-stat">
+                <span class="cf-stat-value" id="cf-max-rating">—</span>
+                <span class="cf-stat-label">Max Rating</span>
+              </div>
+              <div class="cf-stat">
+                <span class="cf-stat-value" id="cf-contests">—</span>
+                <span class="cf-stat-label">Contests</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         <!-- Skills Card (Wide) -->
@@ -240,20 +268,13 @@
           <h3 class="bento-title reveal-text">Tech Arsenal</h3>
           <div class="skills-wrapper">
             <div class="skill-tag float-animation" style="animation-delay: 0s"><i class="fab fa-html5"></i> HTML</div>
-            <div class="skill-tag float-animation" style="animation-delay: 0.2s"><i class="fab fa-css3-alt"></i> CSS
-            </div>
-            <div class="skill-tag float-animation" style="animation-delay: 0.4s"><i class="fab fa-js"></i> JavaScript
-            </div>
-            <div class="skill-tag float-animation" style="animation-delay: 0.6s"><i class="fab fa-react"></i> React
-            </div>
-            <div class="skill-tag float-animation" style="animation-delay: 0.8s"><i class="fab fa-node"></i> Node.js
-            </div>
-            <div class="skill-tag float-animation" style="animation-delay: 1.0s"><i class="fab fa-python"></i> Python
-            </div>
-            <div class="skill-tag float-animation" style="animation-delay: 1.2s"><i class="fab fa-git-alt"></i> Git
-            </div>
-            <div class="skill-tag float-animation" style="animation-delay: 1.4s"><i class="fab fa-figma"></i> Figma
-            </div>
+            <div class="skill-tag float-animation" style="animation-delay: 0.2s"><i class="fab fa-css3-alt"></i> CSS</div>
+            <div class="skill-tag float-animation" style="animation-delay: 0.4s"><i class="fab fa-js"></i> JavaScript</div>
+            <div class="skill-tag float-animation" style="animation-delay: 0.6s"><i class="fab fa-react"></i> React</div>
+            <div class="skill-tag float-animation" style="animation-delay: 0.8s"><i class="fab fa-node"></i> Node.js</div>
+            <div class="skill-tag float-animation" style="animation-delay: 1.0s"><i class="fab fa-python"></i> Python</div>
+            <div class="skill-tag float-animation" style="animation-delay: 1.2s"><i class="fab fa-git-alt"></i> Git</div>
+            <div class="skill-tag float-animation" style="animation-delay: 1.4s"><i class="fab fa-figma"></i> Figma</div>
           </div>
         </div>
       </div>
@@ -271,106 +292,171 @@
       <div class="projects-grid">
         <!-- EduWay -->
         <div class="project-card glass-card">
-          <div class="project-header">
-            <div class="project-icon">
-              <i class="fas fa-graduation-cap"></i>
-            </div>
-            <div class="project-links-top">
-              <a href="https://github.com/Byte-ne/EduWay" target="_blank" aria-label="GitHub Source">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://tinyurl.com/eduwayport" target="_blank" aria-label="Live Demo">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-            </div>
+          <div class="project-banner" style="--banner-from: #6366f1; --banner-to: #8b5cf6">
+            <div class="project-banner-icon"><i class="fas fa-graduation-cap"></i></div>
+            <span class="project-number">01</span>
+            <span class="project-featured"><i class="fas fa-star"></i> Featured</span>
           </div>
           <div class="project-body">
-            <h3 class="project-title">EduWay</h3>
+            <div class="project-meta-row">
+              <h3 class="project-title">EduWay</h3>
+              <div class="project-links-top">
+                <a href="https://github.com/Byte-ne/EduWay" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://tinyurl.com/eduwayport" target="_blank" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
             <p class="project-description">
               An interactive educational platform revolutionizing student learning with real-time tools and resources.
             </p>
             <div class="project-tags">
-              <span class="project-tag">Web App</span>
-              <span class="project-tag">Education</span>
-              <span class="project-tag">Interactive</span>
+              <span class="project-tag"><span class="tag-dot" style="background: #6366f1"></span>Web App</span>
+              <span class="project-tag"><span class="tag-dot" style="background: #8b5cf6"></span>Education</span>
+              <span class="project-tag"><span class="tag-dot" style="background: #a78bfa"></span>Interactive</span>
             </div>
           </div>
         </div>
 
         <!-- EcoWaste -->
         <div class="project-card glass-card">
-          <div class="project-header">
-            <div class="project-icon">
-              <i class="fas fa-recycle"></i>
-            </div>
-            <div class="project-links-top">
-              <a href="https://github.com/Byte-ne/EcoWaste" target="_blank" aria-label="GitHub Source">
-                <i class="fab fa-github"></i>
-              </a>
-              <a href="https://tinyurl.com/ecowasteport" target="_blank" aria-label="Live Demo">
-                <i class="fas fa-external-link-alt"></i>
-              </a>
-            </div>
+          <div class="project-banner" style="--banner-from: #10b981; --banner-to: #06b6d4">
+            <div class="project-banner-icon"><i class="fas fa-recycle"></i></div>
+            <span class="project-number">02</span>
           </div>
           <div class="project-body">
-            <h3 class="project-title">EcoWaste</h3>
+            <div class="project-meta-row">
+              <h3 class="project-title">EcoWaste</h3>
+              <div class="project-links-top">
+                <a href="https://github.com/Byte-ne/EcoWaste" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://tinyurl.com/ecowasteport" target="_blank" aria-label="Demo"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+            </div>
             <p class="project-description">
               Smart waste management solution promoting environmental sustainability through efficient tracking.
             </p>
             <div class="project-tags">
-              <span class="project-tag">Sustainability</span>
-              <span class="project-tag">Management</span>
-              <span class="project-tag">Environment</span>
+              <span class="project-tag"><span class="tag-dot" style="background: #10b981"></span>Sustainability</span>
+              <span class="project-tag"><span class="tag-dot" style="background: #06b6d4"></span>Management</span>
+              <span class="project-tag"><span class="tag-dot" style="background: #14b8a6"></span>Environment</span>
             </div>
           </div>
         </div>
 
         <!-- ByteAI -->
         <div class="project-card glass-card">
-          <div class="project-header">
-            <div class="project-icon">
-              <i class="fas fa-brain"></i>
-            </div>
-            <div class="project-links-top">
-              <a href="https://github.com/Byte-ne/Byte" target="_blank" aria-label="GitHub Source">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
+          <div class="project-banner" style="--banner-from: #a855f7; --banner-to: #ec4899">
+            <div class="project-banner-icon"><i class="fas fa-brain"></i></div>
+            <span class="project-number">03</span>
           </div>
           <div class="project-body">
-            <h3 class="project-title">ByteAI <span class="badge-sm">Dev</span></h3>
+            <div class="project-meta-row">
+              <h3 class="project-title">ByteAI <span class="badge-sm">Dev</span></h3>
+              <div class="project-links-top">
+                <a href="https://github.com/Byte-ne/Byte" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
             <p class="project-description">
               Exploring the frontiers of machine learning and intelligent automation in a robust Python environment.
             </p>
             <div class="project-tags">
-              <span class="project-tag">AI/ML</span>
-              <span class="project-tag">Python</span>
-              <span class="project-tag">Automation</span>
+              <span class="project-tag"><span class="tag-dot" style="background: #a855f7"></span>AI/ML</span>
+              <span class="project-tag"><span class="tag-dot" style="background: #ec4899"></span>Python</span>
+              <span class="project-tag"><span class="tag-dot" style="background: #d946ef"></span>Automation</span>
             </div>
           </div>
         </div>
 
         <!-- DeskOS -->
         <div class="project-card glass-card">
-          <div class="project-header">
-            <div class="project-icon">
-              <i class="fas fa-desktop"></i>
-            </div>
-            <div class="project-links-top">
-              <a href="https://github.com/Byte-ne/ArgonOS" target="_blank" aria-label="GitHub Source">
-                <i class="fab fa-github"></i>
-              </a>
-            </div>
+          <div class="project-banner" style="--banner-from: #f97316; --banner-to: #ef4444">
+            <div class="project-banner-icon"><i class="fas fa-desktop"></i></div>
+            <span class="project-number">04</span>
           </div>
           <div class="project-body">
-            <h3 class="project-title">DeskOS <span class="badge-sm">Dev</span></h3>
+            <div class="project-meta-row">
+              <h3 class="project-title">DeskOS <span class="badge-sm">Dev</span></h3>
+              <div class="project-links-top">
+                <a href="https://github.com/Byte-ne/ArgonOS" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
             <p class="project-description">
               A custom operating system project diving deep into low-level system architecture and kernel design.
             </p>
             <div class="project-tags">
-              <span class="project-tag">OS Dev</span>
-              <span class="project-tag">Systems</span>
-              <span class="project-tag">Low-level</span>
+              <span class="project-tag"><span class="tag-dot" style="background: #f97316"></span>OS Dev</span>
+              <span class="project-tag"><span class="tag-dot" style="background: #ef4444"></span>Systems</span>
+              <span class="project-tag"><span class="tag-dot" style="background: #f59e0b"></span>Low-level</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- kJudge -->
+        <div class="project-card glass-card">
+          <div class="project-banner" style="--banner-from: #0ea5e9; --banner-to: #2563eb">
+            <div class="project-banner-icon"><i class="fas fa-terminal"></i></div>
+            <span class="project-number">05</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-row">
+              <h3 class="project-title">kJudge</h3>
+              <div class="project-links-top">
+                <a href="https://github.com/Byte-ne/kJudge" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <p class="project-description">
+              A powerful CLI tool for competitive programming. Manages test cases, compiles, runs, and auto-stress tests solutions.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag"><span class="tag-dot" style="background: #0ea5e9"></span>CLI</span>
+              <span class="project-tag"><span class="tag-dot" style="background: #3b82f6"></span>C++ / Python</span>
+              <span class="project-tag"><span class="tag-dot" style="background: #2563eb"></span>CP Tool</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- IdeaRank -->
+        <div class="project-card glass-card">
+          <div class="project-banner" style="--banner-from: #f59e0b; --banner-to: #ea580c">
+            <div class="project-banner-icon"><i class="fas fa-chart-line"></i></div>
+            <span class="project-number">06</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-row">
+              <h3 class="project-title">IdeaRank</h3>
+              <div class="project-links-top">
+                <a href="https://github.com/Byte-ne/IdeaRank" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <p class="project-description">
+              A centralized platform for startup analysis. Features advanced tools for measuring startup caliber and improving ideas.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag"><span class="tag-dot" style="background: #f59e0b"></span>Startup</span>
+              <span class="project-tag"><span class="tag-dot" style="background: #f97316"></span>Analysis</span>
+              <span class="project-tag"><span class="tag-dot" style="background: #ea580c"></span>Platform</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- listener-bot -->
+        <div class="project-card glass-card">
+          <div class="project-banner" style="--banner-from: #14b8a6; --banner-to: #0369a1">
+            <div class="project-banner-icon"><i class="fas fa-robot"></i></div>
+            <span class="project-number">07</span>
+          </div>
+          <div class="project-body">
+            <div class="project-meta-row">
+              <h3 class="project-title">listener-bot</h3>
+              <div class="project-links-top">
+                <a href="https://github.com/Byte-ne/listener-bot" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              </div>
+            </div>
+            <p class="project-description">
+              A powerful Discord bot that tracks quiz messages and transitions them to a server for custom real-time leaderboards.
+            </p>
+            <div class="project-tags">
+              <span class="project-tag"><span class="tag-dot" style="background: #14b8a6"></span>Discord Bot</span>
+              <span class="project-tag"><span class="tag-dot" style="background: #0ea5e9"></span>JavaScript</span>
+              <span class="project-tag"><span class="tag-dot" style="background: #0369a1"></span>Integration</span>
             </div>
           </div>
         </div>

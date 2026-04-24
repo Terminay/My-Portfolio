@@ -377,6 +377,55 @@ document.addEventListener('DOMContentLoaded', function () {
 
   revealElements.forEach(el => revealObserver.observe(el));
 
+  // ============================================
+  // Codeforces API Integration
+  // ============================================
+  async function loadCodeforcesData() {
+    const ratingEl = document.getElementById('cf-rating');
+    const maxRatingEl = document.getElementById('cf-max-rating');
+    const rankEl = document.getElementById('cf-rank');
+    const contestsEl = document.getElementById('cf-contests');
+
+    if (!ratingEl) return;
+
+    try {
+      // Fetch user info
+      const userRes = await fetch('https://codeforces.com/api/user.info?handles=kilobyte136');
+      const userData = await userRes.json();
+
+      if (userData.status === 'OK' && userData.result.length > 0) {
+        const user = userData.result[0];
+        ratingEl.textContent = user.rating || 'Unrated';
+        maxRatingEl.textContent = user.maxRating || 'Unrated';
+
+        const rank = user.rank || 'unrated';
+        rankEl.textContent = rank;
+        rankEl.className = 'cf-rank ' + rank.replace(/\s+/g, '-').toLowerCase();
+      }
+
+      // Fetch contest history for count
+      try {
+        const contestRes = await fetch('https://codeforces.com/api/user.rating?handle=kilobyte136');
+        const contestData = await contestRes.json();
+        if (contestData.status === 'OK') {
+          contestsEl.textContent = contestData.result.length;
+        }
+      } catch {
+        contestsEl.textContent = '—';
+      }
+
+    } catch (err) {
+      console.warn('CF API unavailable:', err);
+      ratingEl.textContent = '913';
+      maxRatingEl.textContent = '913';
+      rankEl.textContent = 'newbie';
+      rankEl.className = 'cf-rank newbie';
+      contestsEl.textContent = '—';
+    }
+  }
+
+  loadCodeforcesData();
+
   console.log('Portfolio Enhancements Loaded!');
 });
 
